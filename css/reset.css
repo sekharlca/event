@@ -1,0 +1,301 @@
+.play-btn {
+    font-size: 40px;
+    color: var(--text-color);
+    height: 70px;
+    width: 70px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    border: none;
+    /*    box-shadow: 0 0 0 -5px rgba(255, 255, 255, .5), 0 0 0 10px rgba(255, 255, 255, .5);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 6px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--trans);
+    animation: ripple 2s ease-in-out infinite;
+}
+
+.play-btn:focus {
+    outline: 0;
+    border: none;
+}
+
+.play-btn:hover {
+    box-shadow: 0 0 0 -4px rgba(230, 226, 218, .5), 0 0 0 10px rgba(230, 226, 218, .5);
+}
+
+.play-btn .bx {
+    transition: all .3s ease-in-out;
+}
+
+.play-btn:hover .bx {
+    animation: zoom .4s ease forwards;
+    transform-origin: center;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 -4px rgba(248,34,73,1), 0 0 0 15px rgba(255, 255, 255, .1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(248,34,73,0), 0 0 0 15px rgba(255, 255, 255, .1);
+    }
+}
+
+.title-block{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.title-block h2{
+    font-family: var(--main-font);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--blue-color);
+    margin-bottom: 10px;
+}
+
+.title-block p{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #aaa;
+    position: relative;
+}
+
+.title-block p::after{
+    content:'';
+    width: 70px;
+    height: 5px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 50px;
+    left: 47%;
+}
+
+.btn-red{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    padding: 10px 0;
+    width: 250px;
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn-blue{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    padding: 10px 0;
+    width: 250px;
+    background-color: var(--blue-color);
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+/* go to top start */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 0;
+    transition: all .3s ease-in-out;
+}
+
+#myBtn:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* go to top start */
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>09:30 AM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="program-desc">
+                                    <h3>Registration</h3>
+                                    <h4>Fugit voluptas iusto maiores temporibus autem numquam magnam.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 1 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>11.00 AM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-1.png" alt="schedule-1.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Keynote </h3>
+                                    <h5>Brenden Legros</h5>
+                                    <h4>Facere provident incidunt quos voluptas.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 2 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>11.00 AM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-2.png" alt="schedule-2.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Et voluptatem iusto dicta nobis.</h3>
+                                    <h5>Hubert Hirthe</h5>
+                                    <h4>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 3 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>12.00 AM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-3.png" alt="schedule-3.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Explicabo et rerum quis et ut ea.</h3>
+                                    <h5>Cole Emmerich</h5>
+                                    <h4>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 4 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>02.00 PM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-4.png" alt="schedule-4.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Qui non qui vel amet culpa sequi.</h3>
+                                    <h5>Jack Christiansen</h5>
+                                    <h4>Nam ex distinctio voluptatem doloremque suscipit iusto.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 5 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>03.00 PM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-5.png" alt="schedule-5.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Quos ratione neque expedita asperiores. </h3>
+                                    <h5>Alejandrin Littel</h5>
+                                    <h4>Eligendi quo eveniet est nobis et ad temporibus odio quo.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 6 -->
+
+                <div class="list">
+                    <div class="row users">
+                        <div class="col-2">
+                            <div class="time">
+                                <h6>04.00 PM</h6>
+                            </div>
+                        </div>
+                        <div class="col-10 text">
+                            <div class="text-block">
+                                <div class="avatar">
+                                    <img src="images/schedule-6.png" alt="schedule-6.png" class="img-fluid">
+                                </div>
+                                <div class="program-desc">
+                                    <h3>Quo qui praesentium nesciunt </h3>
+                                    <h5>Willow Trantow</h5>
+                                    <h4>Voluptatem et alias dolorum est aut sit enim neque veritatis.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- list 7 -->
